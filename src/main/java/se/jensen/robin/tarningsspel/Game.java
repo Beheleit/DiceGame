@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Game {
 
-    Scanner scanner = new Scanner(System.in);
-    Player[] players = new Player[2];
-    Dice dice = new Dice();
-    boolean gameOver = true;
+    private Scanner scanner = new Scanner(System.in);
+    private Player[] players = new Player[2];
+    private Dice dice = new Dice();
+    private boolean gameOver = true;
 
     public void startGame() {
         System.out.println("Welcome to the Dice Game!");
@@ -50,7 +50,7 @@ public class Game {
         } while (isTrue);
     }
 
-    public void playGame() {
+    private void playGame() {
         setPlayers(0);
         setPlayers(1);
         gameOver = false;

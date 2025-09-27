@@ -2,9 +2,9 @@ package se.jensen.robin.tarningsspel;
 
 public class Player {
 
-    String firstName;
-    String lastName;
-    int score = 0;
+    private String firstName;
+    private String lastName;
+    private int score = 0;
 
     public String getFirstName() {
         return firstName;
